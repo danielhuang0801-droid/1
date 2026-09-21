@@ -6,7 +6,7 @@ on:
     # 換算台灣開市時間：周一至周五 早上 9 點到下午 1 點半
     # 對應 UTC 為：周一至周五 半夜 1 點到早上 5 點
     - cron: "*/5 * * * *" 
-TB
+
 jobs:
   build:
     runs-on: ubuntu-latest
