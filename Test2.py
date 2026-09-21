@@ -1,9 +1,9 @@
-# tes
+
 import requests
 from bs4 import BeautifulSoup
 import time
 
-# 要
+
 stock = ["1101", "2330", "1102"]
 
 for i in range(len(stock)): 
