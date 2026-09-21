@@ -2,18 +2,21 @@ name: get stock price
 
 on:
   schedule:
-    - cron: "*/5 1-6 * * 1-5"
+    # GitHub 時區比台灣慢 8 小時
+    # 換算台灣開市時間：周一至周五 早上 9 點到下午 1 點半
+    # 對應 UTC 為：周一至周五 半夜 1 點到早上 5 點
+    - cron: "*/5 1-5 * * 1-5" 
 
 jobs:
   build:
-    runs-on: ubuntu-latest by
+    runs-on: ubuntu-latest
 
     steps:
       - name: Check out code
         uses: actions/checkout@v4
-
+        
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: 3.9
           
@@ -22,5 +25,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
           
-      - name: Run script
+      - name: Run stock script
         run: python test2.py
