@@ -26,7 +26,7 @@ for i in range(len(stock)):
     
     #
     token =  8711541708: AAHm7bLc83S8ABZh3vRE8
--3 qCvx0Kv&GUSg # 替換成 BotFather 給的 Token
+     -3 qCvx0Kv&GUSg # 替換成 BotFather 給的 Token
     chat_id = 6275017364  # 替換成 userinfobot 給的 ID
     
   
