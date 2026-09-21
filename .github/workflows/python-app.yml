@@ -23,4 +23,4 @@ jobs:
           pip install requests beautifulsoup4
           
       - name: Run script
-        run: python test1.py
+        run: python test2.py
