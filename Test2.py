@@ -25,7 +25,8 @@ for i in range(len(stock)):
     message = "股票 " + stockid + " 即時股價為 " + price
     
     #
-    token = 3qCvx0Kv8GUSg  # 替換成 BotFather 給的 Token
+    token =  8711541708: AAHm7bLc83S8ABZh3vRE8
+-3 qCvx0Kv&GUSg # 替換成 BotFather 給的 Token
     chat_id = 6275017364  # 替換成 userinfobot 給的 ID
     
   
