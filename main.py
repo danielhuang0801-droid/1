@@ -20,7 +20,7 @@ def main():
     print(f"今日最高降雨機率: {today_precip_prob}%")
 
     # 3. 判斷是否超過 60% (依照步驟2要求。若要配合標題70%，請改為 > 70)
-    if today_precip_prob > 70:
+    if today_precip_prob > 10:
         message = f"☔ 提醒：今天的最高降雨機率為 {today_precip_prob}%，記得帶傘喔！"
         send_telegram_message(message)
     else:
